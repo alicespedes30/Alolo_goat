@@ -1,110 +1,43 @@
-body {
-    margin: 0;
-    background-color: #7cb6cf;
+/* styles.css */
+nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center; /* This centers the items along the main axis */
+    background-color: #555;
+    padding: 10px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    max-width: 1280px;
-    gap: 20px;
-}
-
-.border {
-    height: 369px;
-    width: 290px;
-    background: transparent;
-    border-radius: 10px;
-    transition: border 1s;
-    position: relative;
-}
-
-.border:hover {
-    border: 1px solid white;
-}
-
-.card {
-    height: 379px;
-    width: 300px;
-    border-radius: 10px;
-    transition: background 0.8s;
-    overflow: hidden;
-    background-color: black;
-    box-shadow: 0 70px 63px -60px #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.card0 {
-    background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') center center no-repeat;
-    background-size: 300px;
-}
-
-.card0:hover {
-    background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-.card1 {
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat;
-    background-size: 300px;
-}
-
-.card1:hover {
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-.card2 {
-    background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat;
-    background-size: 300px;
-}
-
-.card2:hover {
-    background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+nav a {
     color: white;
-    margin: 20px;
-    opacity: 0;
-    transition: opacity 1s;
+    text-decoration: none; /* Removes the underline */
+    padding: 10px 20px; /* Adds space around the links */
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
-.card:hover h2,
-.card:hover .icons i {
-    opacity: 1;
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    max-width: 800px;
+    margin: 20px auto; /* Centers the main content block */
+    padding: 20px;
 }
 
-.icons i {
-    opacity: 0;
-    transition: opacity 1s;
+section {
+    background-color: white;
+    margin-bottom: 20px; /* Adds space between sections */
+    padding: 20px;
 }
-
-.icons {
-    position: absolute;
-    fill: #fff;
-    color: #fff;
-    height: 130px;
-    top: 226px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-h1 {
-  color: #f224ef;
-  text-align: center;
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks the flex items vertically */
+        align-items: center;    /* Centers the items on the cross-axis */
+    }
 }
